@@ -29,20 +29,69 @@
     align-items: center;
     position: relative;
     text-align: start;
+    
 }
 
 .color-overlay{
     width: 100%;
     height: 100%;
-    background-color: rgb(51, 149, 2);
+    background-color: rgb(1, 124, 10);
     position: absolute;
     opacity: 0.5;
 }
 
 .section-text{
     z-index: 1;
+    font-size: 120px;
     font-family: 'Anton', sans-serif;
     position: relative;
-    right: 400px;
-    bottom: 150px;
+    bottom: 545px;
+    left: 10px;
 }
+.section-text-1{
+    z-index: 1;
+    font-size: 120px;
+    font-family: 'Anton', sans-serif;
+    position: relative;
+    bottom: 580px;
+    left: 10px; 
+}
+/*resize text in cellphone size*/
+@media screen and (max-width: 500px) {
+    .section-text{
+        z-index: 1;
+        font-size: 50px;
+        bottom: 545px;
+    }
+    .section-text-1{
+        z-index: 1;
+        font-size: 50px;
+        bottom: 565px;
+    }
+}
+/*resize the background image size*/
+@media screen and (max-width: 768px) {
+    .SectionClass{
+        bottom: 70px;
+    }
+  }
+
+/*resize the background image size*/
+@media screen and (min-width: 769px) {
+    .col-text{
+        font-size: 2rem;
+    }
+  } 
+
+  @media screen and (max-width: 768px) {
+    .col-text{
+        font-size: 1rem;
+    }
+    .head{
+        padding-top: 0.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .SectionClass{
+        bottom: 42px;
+    }
+  } 
