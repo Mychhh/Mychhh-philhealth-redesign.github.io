@@ -1,97 +1,142 @@
+body{
+    overflow-x: hidden;/*this hide the excess items on x axis*/
+}
+
 /*head and add*/
 .head{
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     padding-bottom: 2rem;
 }
 
 .Nav-Col{
     background-color: rgb(1, 124, 10);
-    font-family: 'Tiro Telugu', serif;
+  
 
     position:relative;
     bottom: 25px;
+
+    z-index: 1;
+}
+
+.col-text{
+    font-size: 2rem;
 }
 
 /*this is the section background*/
-.SectionClass{
-    position:relative;
-    bottom: 52px;
-    z-index: -1;
+.SECTION{
+    position: relative;
+    bottom: 3.5rem;
 }
 
-.bg-image{
-    padding: 20em;
-    background-size: cover;
+.bgImage{
     background-image: url(../Images/DeskImage.jpeg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+
+    width: 100vw;
+    height: 75vh;
+
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: relative;
-    text-align: start;
-    
+}
+
+.Row-Text{
+    z-index: 1;
+    padding-bottom: 6rem;
+}
+
+h1.Section-Text{
+    padding-left: 7rem;
+    font-size: 7rem;
+    color: white;
+}
+
+p.Section-Text{
+    color: white;
+    padding-left: 7rem;
+    font-size: 1.5rem;
+}
+.Section-Button{
+    padding-left: 7rem;
 }
 
 .color-overlay{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(1, 124, 10);
     position: absolute;
+
+    width: 100vw;
+    height: 75vh;
+
+    background: rgb(1, 124, 10);
     opacity: 0.5;
 }
+/*landing footer*/
+.FOOT{
+    margin-top: -3.5rem;/*this will cater the empty background*/
+}
 
-.section-text{
-    z-index: 1;
-    font-size: 120px;
-    font-family: 'Anton', sans-serif;
-    position: relative;
-    bottom: 545px;
-    left: 10px;
-}
-.section-text-1{
-    z-index: 1;
-    font-size: 120px;
-    font-family: 'Anton', sans-serif;
-    position: relative;
-    bottom: 580px;
-    left: 10px; 
-}
-/*resize text in cellphone size*/
-@media screen and (max-width: 500px) {
-    .section-text{
-        z-index: 1;
-        font-size: 50px;
-        bottom: 545px;
-    }
-    .section-text-1{
-        z-index: 1;
-        font-size: 50px;
-        bottom: 565px;
-    }
-}
-/*resize the background image size*/
+
 @media screen and (max-width: 768px) {
-    .SectionClass{
-        bottom: 70px;
-    }
-  }
+.head{
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+} 
 
-/*resize the background image size*/
-@media screen and (min-width: 769px) {
-    .col-text{
-        font-size: 2rem;
-    }
-  } 
-
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px){
     .col-text{
         font-size: 1rem;
     }
-    .head{
-        padding-top: 0.5rem;
-        padding-bottom: 1.5rem;
+}
+
+/*Flexibility of backgorund section exclusive for tablet user and medium pc screen*/
+@media screen and (min-width: 768px) {
+    h1.Section-Text{
+        font-size: 5rem ;
+        padding-left: 3rem;
+    }    
+    p.Section-Text{
+        padding-left: 3rem;
     }
-    .SectionClass{
-        bottom: 42px;
+    .Section-Button{
+        padding-left: 2.9rem;
     }
-  } 
+
+    .Nav-Col{
+        bottom: 33px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    h1.Section-Text{
+        font-size: 5rem ;
+        padding-left: 3rem;
+    }    
+    p.Section-Text{
+        padding-left: 3rem;
+    }
+    .Section-Button{
+        padding-left: 2.9rem;
+    }
+}
+
+/*Flexibility of backgorund section exclusive for mobile users*/
+@media screen and (max-width: 767px) {
+    h1.Section-Text{
+        font-size: 3rem ;
+        padding-left: 1rem;
+    }    
+    p.Section-Text{
+        padding-left: 1rem;
+    }
+    .Section-Button{
+        padding-left: 0.9rem;
+    }
+
+    .bgImage{
+        height: 80vh;
+    }
+    .color-overlay{
+    height: 80vh;
+}
+}
