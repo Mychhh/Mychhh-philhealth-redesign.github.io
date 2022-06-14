@@ -5,21 +5,20 @@ body{
 /*head and add*/
 .head{
     padding-top: 0.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2.3rem;
 }
 
 .Nav-Col{
     background-color: rgb(1, 124, 10);
   
-
     position:relative;
-    bottom: 25px;
+    padding: 0.5rem;
 
     z-index: 1;
 }
 
 .col-text{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 /*this is the section background*/
@@ -75,7 +74,7 @@ p.Section-Text{
     margin-top: -3.5rem;/*this will cater the empty background*/
 }
 
-
+/*max-screen*/
 @media screen and (max-width: 768px) {
 .head{
     padding-top: 0.5rem;
@@ -88,6 +87,16 @@ p.Section-Text{
         font-size: 1rem;
     }
 }
+
+@media screen and (min-width: 1281px){
+    .SECTION{
+        bottom: 3.9rem;
+    }
+    .FOOT{
+        margin-top: -3.9rem;/*this will cater the empty background*/
+    }
+}
+
 
 /*Flexibility of backgorund section exclusive for tablet user and medium pc screen*/
 @media screen and (min-width: 768px) {
@@ -107,7 +116,7 @@ p.Section-Text{
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1279px) {
     h1.Section-Text{
         font-size: 5rem ;
         padding-left: 3rem;
@@ -117,6 +126,15 @@ p.Section-Text{
     }
     .Section-Button{
         padding-left: 2.9rem;
+    }
+    .SECTION{
+        bottom: 2.5rem;
+    }
+    .Nav-Col{
+        bottom: 19px;
+    }
+    .FOOT{
+       padding: 1rem;
     }
 }
 
