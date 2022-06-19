@@ -1,0 +1,51 @@
+.theArticle{
+    height: 100vh;
+    width: 100vw;
+
+    padding-top: 5px;
+}
+
+.theCarousel {
+    display: relative;
+}
+
+.firstImageCarousel{
+    width: 200px;
+    height: 300px;
+    object-fit: fill;
+    /* You can also use cover instead of fill but they are different */
+}
+
+.secondImageCarousel{
+    width: 200px;
+    height: 300px;
+    object-fit: fill;
+    /* You can also use cover instead of fill but they are different */
+}
+
+.thirdImageCarousel{
+    width: 200px;
+    height: 300px;
+    object-fit: fill;
+    /* You can also use cover instead of fill but they are different */
+}
+
+.firstImageCard{
+    height: 200px;
+    object-fit: fill;
+}
+
+.secondImageCard{
+    height: 200px;
+    object-fit: fill;
+}
+
+.thirdImageCard{
+    height: 200px;
+    object-fit: fill;
+}
+
+.fourthImageCard{
+    height: 200px;
+    object-fit: fill;
+}
